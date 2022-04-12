@@ -1,8 +1,43 @@
-<html>
-<head>
-<title>My App</title>
-</head>
 <body>
-This is my app!
-</body>
-</html>
+    <header id="home">
+      <nav class="navbar">
+        <h1>Resturant</h1>
+        <ul>
+            <li>Home</li>
+            <li>Events</li>
+            <li>New Events</li>
+        </ul>
+      </nav>
+      <div class="welcome-event"></div>
+    </header>
+    <main>
+        <section id="events">
+            <h1 class="section-title">Events</h1>
+            <div class="events-container"></div>
+        </section>
+        <section id="add-event">
+            <h1 class="section-title">New Event</h1>
+            <form class="form">
+              <div>
+              <ol>
+              <li>
+                <input type="text" id="name" placeholder="Name">
+                </li>
+                <li>
+                <input type="number" id="attendee" placeholder="Attendees">
+                </li>
+                <li>
+                <textarea id="description" cols="30" rows="10" placeholder="Description..."></textarea>
+                </li>
+                <li>
+                <select id="status">
+                    <option value="0">Free</option>
+                    <option value="1">Paid</option>
+                </select>
+                </li>
+                <button class="btn btn-primary">Save</button>
+                </ol>
+                </div>
+            </form>
+        </section>
+    </main>
